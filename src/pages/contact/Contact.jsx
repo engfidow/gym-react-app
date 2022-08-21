@@ -7,7 +7,7 @@ import "./contact.css"
 function Contact() {
   return (
     <div>
-      
+      {/***header component */}
       <Header title= "Contact" image= {Headerimage} >
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Perferendis reprehenderit vel dignissimos modi dolorem esse 
