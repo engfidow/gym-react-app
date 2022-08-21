@@ -1,0 +1,326 @@
+.main-header{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+.main-header-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+.main-header-left{
+    margin-top: -2rem;
+}
+.main-header-left h4{
+    margin-bottom: 1rem;
+    color: rgba(255, 77, 77, 0.779);
+    font-weight: 400;
+}
+.main-header-left h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.main-header-left p{
+    margin: 1rem 0 3.5rem;
+    font-size: .9rem;
+    text-align: justify;
+}
+.main-header-right{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.main-header-circle{
+    width: 25rem;
+    height: 25rem;
+    background: linear-gradient(75deg, rgb(249, 192, 47), transparent);
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(15px);
+}
+.main-header-image{
+    position: relative;
+}
+
+
+
+/*************************** prograner card *************************/
+
+.programer{
+    margin-top: 4rem;
+}
+.programer__wraper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.programer__programm a{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.programer__programm:hover a{
+    background: var(--yelow-color);
+    color: black;
+}
+.programer__programm:hover span{
+    background: var(--yelow-color);
+    color: black;
+}
+
+
+/*************************** values *************************/
+.values__container{
+    display: grid;
+    grid-template-columns: 38% 50%;
+    gap: 12%;
+}
+.value__image{
+    filter: saturate(0.25);
+    transition: var(--transition);
+}
+.value__image:hover{
+    filter: saturate(1);
+}
+
+.values__right > p{
+    margin: 1.5rem 0 3rem;
+}
+.values__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.4rem 2.4rem;
+} 
+.values__wrapper small{
+    text-align: justify;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+/*************************** FAQs *************************/
+.faqs__wrapper{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 5rem;
+    align-items: flex-start;
+}
+.faq{
+    background: var(--card-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.faq div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq__icon{
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.faq p{
+    margin-top: 1.5rem;
+}
+
+
+
+/*************************** Testomonia *************************/
+.test-containe {
+    margin-top: 3rem;
+    width: 25rem;
+    height: 20rem;
+    margin: 5rem;
+  }
+
+  .client-avart{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary);
+  }
+  
+  .testmonial{
+    background: var(--card-color);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+    
+  }
+  
+  .client-review{
+    color: #fff;
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+  }
+  small{
+    text-align: center;
+  }
+.title__icon{
+    justify-content: center;
+}
+
+
+
+/*************************** Footer *************************/
+footer{
+    background: var(--color-primary);
+    margin-top: 7rem;
+    padding-top: 7rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.footer__container{
+    display: grid;
+    grid-template-columns: 26rem 1fr 1fr 1fr;
+    gap: 6rem;
+}
+.footer__container article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .7rem;
+}
+.footer__container p{
+    margin-top: .5rem;
+}
+.footer__container h4{
+    margin-bottom: .6rem;
+    font-size: 1rem;
+}
+
+.footer__social{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.footer__social a{
+    background: #fff;
+    padding: .7rem;
+    border: 1px solid transparent;
+    border-radius: .8rem;
+    transition: var(--transition);
+}
+.footer__social a svg{
+    color: #000;
+}
+.footer__social a:hover{
+    background: transparent;
+    border-color: #fff;
+}
+.footer__copyright{
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.554);
+    margin-top: 5rem;
+
+}
+.footer__container article a:hover{
+    text-decoration: underline;
+}
+
+
+/***********************   General midia quere   ***********************/
+@media screen and (max-width: 1024px){
+    .main-header{
+        height: fit-content;
+        padding: 12rem 0;
+    }
+    .main-header-container{
+        gap: 0;
+    }
+    .main-header-circle{
+        width: 16rem;
+        height: 16rem;
+    }
+    /*************************** prograner card *************************/
+    .programer__wraper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .programer{
+        margin-top: 0;
+    }
+    /*************************** values card *************************/
+    .values__container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .values__wrapper{
+        gap: 4rem 3rem;
+    }
+    .value__image{
+        display: none;
+    }
+    /*************************** FAQs *************************/
+    .faqs__wrapper{
+        grid-template-columns: 1fr;
+    }
+     /*************************** Footer *************************/
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}
+
+/***********************   General midia quere   ***********************/
+@media screen and (max-width: 600px){
+    
+    .main-header-circle, .main-header-image{
+        display: none;
+    }
+   
+    .main-header-container{
+        grid-template-columns: 1fr;
+    }
+    /* programer */
+    .programer{
+        margin-top: 0;
+    }
+    .programer__wraper{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+     /* values */
+     .values__wrapper{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .card,.alues__value{
+        width: 84%;
+        margin-inline: auto;
+    }
+    /* values */
+    footer{
+        margin-top: 7rem;
+    }
+    .footer__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .footer__container article{
+        align-items: center;
+    }
+    .footer__container p{
+        text-align: center;
+    }
+}

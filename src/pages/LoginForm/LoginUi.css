@@ -1,0 +1,106 @@
+.main {
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #201b68fa;
+  }
+  .sub-main {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    width: 35%;
+    box-shadow: 12px rgb(207, 207, 207);
+    padding-top: 30px;
+    border-radius: 60px; 
+    background-color: var(--color-primary);
+  }
+  .imgs {
+      padding-top: 20px;
+      justify-content: center;
+      display: flex;
+    }
+  .container-image {
+    background-color: rgb(223, 221, 221); 
+    border-radius: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 115px;
+    width: 115px;
+  }
+  .profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 130px;
+  } 
+
+.form-login  input{
+      width: 300px;
+      height: 50px;
+      border-radius: 60px;
+      border: 1px solid red;
+      outline: none;
+      background-color: transparent;
+  }
+#error{
+    color: red;
+    font-size: 1rem;
+}
+  .email{
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      padding: 14px 0 0 25px;
+  }
+
+  .name{
+      padding-left: 70px;
+      font-size: 20px;
+  }
+  .second-input{
+      padding-top: 20px;
+  }
+.login-button button{
+    color: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 4rem;
+    background: #201b68fa;
+    border-radius: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+.login-button button:hover{
+    background: #332aaefa;
+  }
+  .login-button{
+      padding-top: 25px;
+  }
+
+  .link{
+      font-size: 25px;
+      font-weight: 400;
+  }
+ 
+h1{
+    color: #fff;
+    margin: 1rem 0;
+}
+
+
+
+/***********************   General midia quere   ***********************/
+@media screen and (max-width: 1024px){
+    .sub-main {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .sub-main {
+        width: 80%;
+    }
+}

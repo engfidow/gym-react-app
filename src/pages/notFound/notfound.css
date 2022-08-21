@@ -1,0 +1,40 @@
+.notfound__container{
+    text-align: center;
+    padding-top: 1rem;
+}
+.notfound__container h1{
+    color: red;
+    text-align: center;
+    
+}
+.notfound__container h2{
+    margin-bottom: 2rem;
+
+}
+.notfound__container .sad{
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    left: 38%;
+    justify-content: center;
+    align-items: center;
+}
+.notfound__container .btn{
+    margin-top: 2rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+/***********************   General midia quere   ***********************/
+@media screen and (max-width: 1024px){
+    .notfound__container .sad{
+        left: 32%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .notfound__container .sad{
+        left: 25%;
+    }
+}

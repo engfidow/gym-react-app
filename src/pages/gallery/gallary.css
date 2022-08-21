@@ -1,0 +1,29 @@
+.gellery__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.gellery__container article{
+    border: 1rem solid transparent;
+    transition: var(--transition);
+}
+.gellery__container article:hover{
+    border-color: var(--color-primary);
+}
+
+/***********************   General midia quere   ***********************/
+@media screen and (max-width: 1024px){
+    .gellery__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .gellery__container article{
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .gellery__container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }  
+}

@@ -1,0 +1,53 @@
+.trainers__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+.card .trainer{
+    padding: 1rem;
+}
+.trainer__img{
+    border-radius: 0 2rem;
+    overflow: hidden;
+}
+.trainer h3{
+    margin-top: 2rem;
+}
+.trainer p{
+    margin-top: .5rem;
+}
+.trainer__social{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.trainer__social a{
+    font-size: .7rem;
+    background: #201b68fa;
+    padding: .8rem;
+    border-radius: .7rem;
+    transition: var(--transition);
+}
+.trainer__social a:hover{
+    background: var(--color-primary);
+}
+
+/***********************   General midia quere   ***********************/
+@media screen and (max-width: 1024px){
+    .trainers__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .trainers__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .card .trainer{
+        width: 90%;
+        margin-inline: auto;
+    }
+}
