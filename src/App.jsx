@@ -14,19 +14,24 @@ import Login from './pages/LoginForm/LoginForm'
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+
 const App = () => {
+
   useEffect(() => {
     Aos.init({
       duration: 2500,
       delay: 400,
     });
   });
+
   const [user, setUser] = useState(false);
-  if(!user) return <Login setUser = {setUser}/>
+
+  if(!user) return  <Login setUser = {setUser} /> 
+
   return (
     
     <BrowserRouter>
-
+       
       <Navbar />
       <Routes>
         <Route index element={<Home/>}/>
