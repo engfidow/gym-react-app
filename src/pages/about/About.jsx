@@ -8,6 +8,7 @@ import Headerimage from "../../images/header_bg_1.jpg"
 function About() {
   return (
     <>
+    {/***header component */}
       <Header title= "About Us" image= {Headerimage} >
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Perferendis reprehenderit vel dignissimos modi dolorem esse 
